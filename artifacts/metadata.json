@@ -1,0 +1,8 @@
+{
+  "versi_model": "1.0.0",
+  "algoritma": "XGBRegressor (n_estimators=300, lr=0.05, max_depth=5) dalam Pipeline cleaning->imputer(median)->model",
+  "fitur_input": ["arus_ampere", "getaran_mm_s", "suhu_body_c", "tegangan_volt"],
+  "target": "sisa_umur_jam",
+  "library": {"scikit-learn": "1.6.1", "xgboost": "3.x", "pandas": "2.2.3"},
+  "catatan": "ISI metrik test (MAE/RMSE/R2) dan baseline dari notebook Anda."
+}
