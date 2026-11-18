@@ -1,0 +1,27 @@
+{
+  "versi_model": "1.0.0",
+  "algoritma": "XGBRegressor (n_estimators=300, lr=0.05, max_depth=5) dalam Pipeline cleaning->imputer(median)->model",
+  "format_model": "booster XGBoost (JSON) + imputer (joblib)",
+  "fitur_input": [
+    "arus_ampere",
+    "getaran_mm_s",
+    "suhu_body_c",
+    "tegangan_volt"
+  ],
+  "target": "sisa_umur_jam",
+  "metrik_test": {
+    "mae_model": 92.43223840332031,
+    "rmse_model": 133.00664210945789,
+    "r2_model": 0.9615352893745169,
+    "mae_baseline": 575.97517475,
+    "n_train": 800,
+    "n_test": 200
+  },
+  "data_sintetis": false,
+  "library": {
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6"
+  }
+}
