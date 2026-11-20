@@ -476,8 +476,8 @@ httpx>=0.27
 
 | Informasi | Keterangan |
 |---|---|
-| Nama | Iqbal Ianudin |
-| NIM | [Isi NIM] |
+| Nama | Iqbal Ianudin & Muhammad Haikal Alfaridzi |
+| NIM | 2403141 & 2407942 |
 | Mata Kuliah | MKB |
 | Proyek | Predictive Maintenance – RUL Motor Induksi |
 
