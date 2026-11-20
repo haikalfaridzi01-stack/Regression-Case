@@ -90,8 +90,8 @@ Pastikan dataset dan konfigurasi pelatihan sudah sesuai sebelum melakukan traini
 
 ## 👨‍💻 Pengembang
 
-**Nama:** Iqbal Ianudin  
-**NIM:** [Isi NIM]  
+**Nama:** Iqbal Imanudin & Muhammad Haikal Alfaridzi  
+**NIM:** 2403141 & 2407942  
 **Mata Kuliah:** MKB  
 **Proyek:** Predictive Maintenance – Prediksi RUL Motor Induksi
 
