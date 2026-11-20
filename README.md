@@ -1,4 +1,4 @@
-# ⚙️ Predictive Maintenance – Prediksi Remaining Useful Life (RUL) Motor Induksi
+# ⚙️ Predictive Maintenance Prediksi Remaining Useful Life (RUL) Motor Induksi
 
 Aplikasi **Predictive Maintenance** berbasis Machine Learning untuk memprediksi *Remaining Useful Life* (RUL) atau estimasi sisa umur operasional motor induksi dalam satuan jam.
 
