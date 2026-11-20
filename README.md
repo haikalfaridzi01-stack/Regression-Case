@@ -14,7 +14,7 @@ Mengembangkan sistem prediksi pemeliharaan motor induksi yang dapat membantu mem
 
 Dengan pendekatan Predictive Maintenance, sistem diharapkan dapat membantu proses pemantauan kondisi motor dan mendukung pengambilan keputusan terkait perawatan sebelum terjadi kerusakan.
 
-## 🧠 Teknologi yang Digunakan
+## 🧠 Program yang Digunakan
 
 | Teknologi | Fungsi |
 |---|---|
