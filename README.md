@@ -1,4 +1,4 @@
-# Predictive Maintenance — Remaining Useful Life (RUL) Motor Induksi
+# Predictive Maintenance - Remaining Useful Life (RUL) Motor Induksi
 
 > Prototipe sistem *predictive maintenance* berbasis Machine Learning untuk memperkirakan sisa umur operasional (*Remaining Useful Life/RUL*) motor induksi dari parameter kondisi motor.
 
@@ -52,7 +52,7 @@ Keluaran aplikasi berupa estimasi RUL dalam jam, kategori kondisi motor, dan wak
 
 ## Arsitektur Sistem
 
-### Mode A — Streamlit langsung
+### Mode A = Streamlit langsung
 
 ```text
 Pengguna
@@ -73,7 +73,7 @@ XGBoost Regressor
 Estimasi RUL + Status
 ```
 
-### Mode B — Streamlit + FastAPI
+### Mode B = Streamlit + FastAPI
 
 ```text
 Pengguna
@@ -163,26 +163,26 @@ Regression-Case/
 │   └── predictor.py
 ├── tests/
 │   └── smoke_test.py
-├── train_rul_model.ipynb
+├── train_rul_model(2).ipynb
 ├── requirements.txt
 └── README.md
 ```
 
 **Ringkasan komponen:**
 
-- `app/api/main.py` — endpoint FastAPI, validasi input, dan pemanggilan prediksi.
-- `app/ui/streamlit_app.py` — antarmuka prediksi satuan dan batch CSV.
-- `src/features.py` — pengelolaan fitur dan pembersihan nilai yang tidak valid.
-- `src/predictor.py` — pemuatan artefak, preprocessing, prediksi, penentuan status, dan pengukuran latency.
+- `app/api/main.py` : endpoint FastAPI, validasi input, dan pemanggilan prediksi.
+- `app/ui/streamlit_app.py` : antarmuka prediksi satuan dan batch CSV.
+- `src/features.py` : pengelolaan fitur dan pembersihan nilai yang tidak valid.
+- `src/predictor.py` : pemuatan artefak, preprocessing, prediksi, penentuan status, dan pengukuran latency.
 - `artifacts/` — model, imputer, dan metadata.
-- `tests/smoke_test.py` — pengujian dasar endpoint.
-- `train_rul_model.ipynb` — notebook pelatihan dan pengembangan model.
+- `tests/smoke_test.py` : pengujian dasar endpoint.
+- `train_rul_model.ipynb` : notebook pelatihan dan pengembangan model.
 
 Nama atau keberadaan artefak pada folder `artifacts/` dapat berbeda mengikuti hasil training. Pastikan berkas yang dibutuhkan oleh loader tersedia sebelum menjalankan aplikasi.
 
 ## Persyaratan
 
-- Python 3.11–3.13 (sesuaikan dengan versi yang kompatibel dengan seluruh dependency).
+- Python 3.11-3.13 (sesuaikan dengan versi yang kompatibel dengan seluruh dependency).
 - Git.
 - Editor seperti Visual Studio Code atau Jupyter Notebook.
 - Seluruh file artefak model yang dibutuhkan aplikasi.
@@ -227,7 +227,7 @@ Pastikan artefak model yang diperlukan tersedia di direktori `artifacts/`.
 
 ## Menjalankan Aplikasi
 
-### Mode A — Streamlit langsung
+### Mode A : Streamlit langsung
 
 ```bash
 python -m streamlit run app/ui/streamlit_app.py
@@ -237,7 +237,7 @@ Buka alamat berikut di browser:
 
 - Streamlit: http://localhost:8501
 
-### Mode B — Streamlit dengan FastAPI
+### Mode B : Streamlit dengan FastAPI
 
 Jalankan backend pada **Terminal 1**:
 
@@ -363,8 +363,6 @@ Alur umum:
 5. Melatih XGBoost Regressor.
 6. Mengevaluasi hasil prediksi.
 7. Menyimpan model dan artefak preprocessing.
-
-Untuk pelaporan eksperimen, cantumkan setidaknya **MAE, RMSE, dan R²** dari data uji, serta grafik nilai aktual dibandingkan prediksi. Nilai metrik tidak dicantumkan di README ini karena harus diisi dari hasil eksekusi eksperimen yang dapat diverifikasi.
 
 ## Pengujian
 
