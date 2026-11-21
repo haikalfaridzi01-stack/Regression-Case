@@ -43,7 +43,7 @@ SENSOR = {
     "suhu_body_c": dict(
         label="Suhu body", satuan="°C", ikon="", min=0.0, max=200.0, default=45.0, step=0.5,
         plot=(30.0, 100.0), judul="Suhu badan motor",
-        info="Suhu tinggi mempercepat penuaan isolasi gulungan",
+        info="",
     ),
     "tegangan_volt": dict(
         label="Tegangan", satuan="V", ikon="", min=0.0, max=500.0, default=220.0, step=0.5,
@@ -398,7 +398,7 @@ with tab_prediksi:
                               "Peran": s["judul"], "Posisi vs data": label_posisi(info, payload[k])})
             st.dataframe(pd.DataFrame(baris), hide_index=True, use_container_width=True)
             for k, s in SENSOR.items():
-                st.markdown(f"**{s['ikon']} {s['label']}**: {s['info']}")
+                st.markdown(f"")
 
         with t_rek:
             s = STATUS[kode]
